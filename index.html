@@ -9,14 +9,13 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    
-   <script src="https://analytics-platform-dzkr.onrender.com/sdk/analytics.js"></script>
 
-<script>
-  analytics.init({
-    endpoint: "https://analytics-platform-dzkr.onrender.com/api/track"
-  });
-</script>
+ <!-- Load SDK -->
+<script src="https://analytics-sdk.vercel.app/analytics.js"></script>
+
+<!-- Run analytics init -->
+<script src="/analytics-init.js"></script>
+
 
 
   </body>
