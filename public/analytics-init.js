@@ -1,6 +1,7 @@
 console.log("Initializing Analytics...");
-analytics.init({
-  endpoint: "https://analytics-platform-dzkr.onrender.com/api/track",
+
+window.analytics.init({
+  endpoint: "https://analytics-platform-dzkr.onrender.com/api/track"
 });
 
-analytics.track("page_view");
+window.analytics.track("page_view");

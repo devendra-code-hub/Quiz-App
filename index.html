@@ -7,23 +7,15 @@
     <title>Vite + React</title>
   </head>
   <body>
- <script>
-window.analytics.init({
-    endpoint: "https://analytics-platform-dzkr.onrender.com/api/track"
-});
-</script>
+ <!-- 1. Mount your React app -->
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    
+  <!-- 2. Load the Analytics SDK FIRST -->
+  <script src="https://analytics-sdk-2.vercel.app/analytics.js"></script>
 
-
- <!-- Load SDK -->
-<script src="https://analytics-sdk-2.vercel.app/analytics.js"></script>
-
-
-<!-- Run analytics init -->
-<script src="/analytics-init.js"></script>
+  <!-- 3. Initialize analytics AFTER the SDK loads -->
+  <script src="/analytics-init.js"></script>
 
 
 
